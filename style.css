@@ -1,0 +1,61 @@
+:root {
+  --bg: #F5EFE6;
+  --card: #FFFDF9;
+  --chip: #EFE7DB;
+  --text: #3A2E28;
+  --text-2: #8A7A6E;
+  --terracotta: #C4593A;
+  --olive: #6B7248;
+  --gold: #CDA342;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1B1613;
+    --card: #29221D;
+    --chip: #322A24;
+    --text: #F2ECE4;
+    --text-2: #A99C90;
+  }
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: ui-rounded, -apple-system, "SF Pro Rounded", "Segoe UI", system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+.wrap { max-width: 680px; margin: 0 auto; padding: 48px 24px 64px; }
+header.site { display: flex; align-items: baseline; gap: 12px; margin-bottom: 40px; }
+header.site a.brand { font-size: 1.35rem; font-weight: 800; color: var(--terracotta); text-decoration: none; letter-spacing: -0.02em; }
+header.site nav { margin-left: auto; display: flex; gap: 18px; }
+header.site nav a { color: var(--text-2); text-decoration: none; font-size: 0.95rem; font-weight: 600; }
+header.site nav a:hover { color: var(--terracotta); }
+h1 { font-size: 2rem; font-weight: 800; letter-spacing: -0.02em; margin-bottom: 6px; }
+p.effective { color: var(--text-2); font-size: 0.9rem; margin-bottom: 28px; }
+p.lede { color: var(--text-2); font-size: 1.05rem; margin-bottom: 28px; }
+h2 { font-size: 1.15rem; font-weight: 700; margin: 32px 0 10px; color: var(--olive); }
+p, li { margin-bottom: 10px; }
+ul, ol { padding-left: 22px; margin-bottom: 14px; }
+strong { font-weight: 700; }
+a { color: var(--terracotta); }
+.card {
+  background: var(--card);
+  border-radius: 20px;
+  padding: 20px 24px;
+  margin: 16px 0;
+  box-shadow: 0 1px 3px rgba(58, 46, 40, 0.06);
+}
+.card h3 { font-size: 1rem; font-weight: 700; margin-bottom: 4px; }
+.card p { margin-bottom: 0; color: var(--text-2); }
+footer { margin-top: 56px; color: var(--text-2); font-size: 0.85rem; }
+.hero { text-align: center; padding: 32px 0 8px; }
+.hero .glyph { font-size: 3rem; }
+.hero h1 { font-size: 2.4rem; margin: 12px 0 8px; }
+.hero p { color: var(--text-2); font-size: 1.1rem; max-width: 460px; margin: 0 auto 28px; }
+.links { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+.links a {
+  display: inline-block; background: var(--chip); color: var(--text);
+  text-decoration: none; font-weight: 700; padding: 12px 22px; border-radius: 14px;
+}
+.links a:hover { background: var(--terracotta); color: #FFFDF9; }
