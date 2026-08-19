@@ -59,3 +59,4 @@ footer { margin-top: 56px; color: var(--text-2); font-size: 0.85rem; }
   text-decoration: none; font-weight: 700; padding: 12px 22px; border-radius: 14px;
 }
 .links a:hover { background: var(--terracotta); color: #FFFDF9; }
+.links a.store { background: var(--terracotta); color: #FFFDF9; font-size: 1.05rem; padding: 14px 26px; }

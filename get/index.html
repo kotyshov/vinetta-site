@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Get Vinetta</title>
+<meta name="robots" content="noindex">
+<!--
+  Shareable short link: vinetta.app/get
+  Redirects to the App Store; Apple routes each visitor to their own country storefront
+  because the URL carries no storefront code.
+
+  Campaign tracking (App Store Connect > Analytics > Acquisition > Campaigns):
+  once a provider token exists, set PT below and share links as vinetta.app/get?c=<campaign>.
+  The c value is passed through as Apple's ct parameter.
+-->
+<script>
+  var APP_URL = "https://apps.apple.com/app/id6797190260";
+  var PT = ""; // provider token from the ASC campaign link generator; empty = no tracking params
+  var c = new URLSearchParams(location.search).get("c");
+  var url = APP_URL + (PT && c ? "?pt=" + PT + "&ct=" + encodeURIComponent(c) + "&mt=8" : "");
+  location.replace(url);
+</script>
+<meta http-equiv="refresh" content="0;url=https://apps.apple.com/app/id6797190260">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<div class="wrap hero">
+  <div class="glyph">🍷</div>
+  <p>Taking you to the App&nbsp;Store…</p>
+  <div class="links"><a href="https://apps.apple.com/app/id6797190260">Open Vinetta on the App Store</a></div>
+</div>
+</body>
+</html>
