@@ -15,8 +15,8 @@
   The c value is passed through as Apple's ct parameter.
 -->
 <script>
-  var APP_URL = "https://apps.apple.com/app/id6797190260";
-  var PT = ""; // provider token from the ASC campaign link generator; empty = no tracking params
+  var APP_URL = "https://apps.apple.com/app/apple-store/id6797190260";
+  var PT = "129247411";
   var c = new URLSearchParams(location.search).get("c");
   var url = APP_URL + (PT && c ? "?pt=" + PT + "&ct=" + encodeURIComponent(c) + "&mt=8" : "");
   location.replace(url);
